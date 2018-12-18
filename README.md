@@ -6,7 +6,7 @@ alias gs='git status -s'
 alias dr='dri && drc'
 alias gcmc='git commit -am "mc"'
 alias dri='docker images -qf dangling=true | xargs docker rmi'
-alias drc='docker ps -aq --no-trunc -f status=exited | xargs docker rm
+alias drc='docker ps -aq --no-trunc -f status=exited | xargs docker rm'
 alias nlg='npm ls -g --depth=0 2>/dev/null'
 alias nl='npm ls --depth=0 2>/dev/null'
 ```
