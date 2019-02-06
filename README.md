@@ -4,7 +4,7 @@ personal configs for system files
 ```
 alias gs='git status -s'
 alias gcmc='git commit -am "merge conflict"'
-alias gcu='git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done'
+alias gcu='git fetch -p && for branch in `git branch -vv | grep ": gone]" | awk "{print $1}"`; do git branch -D $branch; done'
 alias dr='drc && dri'
 alias dri='docker images -qf dangling=true | xargs docker rmi'
 alias drc='docker ps -aq --no-trunc -f status=exited | xargs docker rm'
